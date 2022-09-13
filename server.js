@@ -12,8 +12,10 @@ const server=Express();
 const bodyparser=require('body-parser'); //used to parse any kind of data(text,json,html,xml....) from request body
 const fs=require('fs'); // file system(fs) is a module which helps to read ,write files 
 const port=5001;
- const dburl="mongodb://localhost:27017/brilliodb"
+ //const dburl="mongodb://localhost:27017/brilliodb"
 //const dburl="mongodb://localhost:27017/storydb"
+//mongo db from mongodb.com
+const dburl = "mongodb+srv://dhanupandey:test12345@cluster0.s2usivc.mongodb.net/?retryWrites=true&w=majority"
 const cors =require("cors")
 //server.use()----it is a middleware which is called before every http request
 //Express.static() is used to make build static which helps to access assests directly inside build 
